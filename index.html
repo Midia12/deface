@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwned by Midia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #330033; 
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Animação de fade in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animação de texto */
+        @keyframes textAnimation {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Aplicando animação ao texto */
+        .animated-text {
+            animation: textAnimation 1.5s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://github.com/Midia12/deface/blob/main/image.png" alt="Logo da Empresa">
+        <h1 class="animated-text">Seu Site Foi Pwned</h1>
+        <p class="animated-text">Oops! Parece que seus sistemas foram comprometidos pela equipe Midia.</p>
+        <p class="animated-text">Não se preocupe, estamos apenas brincando. Reforce a segurança do seu site!</p>
+    </div>
+</body>
+</html>
