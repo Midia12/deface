@@ -1,84 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pwned by Midia</title>
+    <title>Midia</title>
     <style>
+
+        @font-face { font-family: angel_wish; src: url('angel_wish.ttf'); } 
+        @font-face { font-family: console; src: url('console.ttf'); } 
+        #ops {
+            box-sizing: border-box;
+            font-family: "angel_wish";
+            color: white;
+            position: relative;
+            font-size: 160;
+            left: 230;
+            top: 150px
+            
+        }
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #330033; 
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            background-color: 000000;
+            overflow: hidden;
+        }
+        #logo {
+            
+            filter: brightness(90);
+            position: relative;
+            width: 450;
+            left: 560;
+            top: -200;
         }
 
-        .container {
-            text-align: center;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards;
-        }
-
-        h1, p {
-            margin: 0;
-            padding: 10px;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        /* Animação de fade in */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Animação de texto */
-        @keyframes textAnimation {
-            0% {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* Aplicando animação ao texto */
-        .animated-text {
-            animation: textAnimation 1.5s ease-in-out;
-            animation-fill-mode: forwards;
+    
+        #msg {
+            font-family: console;
+            color: white;
+            position: relative;
+            left: 230;
+            top: -200;
+            font-size: 45;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://raw.githubusercontent.com/Midia12/deface/main/image.png" alt="Logo da Empresa">
-        <h1 class="animated-text">Seu Site Foi Pwned</h1>
-        <p class="animated-text">Oops! Parece que seus sistemas foram comprometidos pela equipe Midia.</p>
-        <p class="animated-text">Não se preocupe, estamos apenas brincando. Reforce a segurança do seu site!</p>
-    </div>
+    <h1 id="ops">Ops...</h1>
+    <img src="logo.png" id="logo">
+    
+    <h2 id="msg">It looks like your site was pwned by Midia 
+        <br>Don't worry, we probably won't leave any damage!</h2>
 </body>
 </html>
